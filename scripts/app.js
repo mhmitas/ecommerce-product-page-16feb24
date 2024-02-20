@@ -5,3 +5,5 @@ function cartProductCount(){
     setElementValuebyId('product-quantity',updatedProductNum)
 }
 
+
+// document.getElementById('product-img-container').style.display = 'none'
