@@ -8,10 +8,39 @@ body {
     /* border: 1px solid; */
 }
 
-.product-img img{
+.product-img img {
     border-radius: 12px;
 }
-.thumbnail-img img{
+
+.thumbnail-img img {
     border-radius: 8px;
 }
 
+/* nav cart icon styles */
+#cart {
+    width: 50px;
+    height: 24px;
+    position: relative;
+}
+
+.cart-img {
+    width: 24px;
+}
+
+#product-quantity {
+    background-color: hsl(26, 100%, 55%);
+    font-weight: 800;
+    font-size: 12px;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 9px;
+    position: absolute;
+    left: 17px;
+    top: -10px;
+}
+
+#cart-details{
+    background-color: rgba(255, 166, 0, 0.434);
+    width: 300px;
+    min-height: 200px;
+}
