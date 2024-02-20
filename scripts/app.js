@@ -2,7 +2,7 @@
 
 
 
-// cartDetails-------------------------
+// cartDetails------------------
 function cartDetails() {
     const cartDetails = document.getElementById('cart-details')
     if (cartDetails.style.display === 'block') {
@@ -13,35 +13,45 @@ function cartDetails() {
 }
 
 
-// update number in cart box
-function cartProductCount() {
-    const currentProductNum = getInnerInt('productCount')
-    const updatedProductNum = currentProductNum + 1;
-    setElementValuebyId('productCount', updatedProductNum)
-}
-
-
-
-
-
-
-
 
 
 // --------------------
 // control + - button
 const productQuantity = getInnerInt('product-quantity')
-console.log(productQuantity)
-
-function byPlusMinusBtn() {
-    plusBtn = document.getElementById('plus-btn')
-    minusBtn = document.getElementById('minus-btn')
-}
 
 
 
-function getInnerInt(id){
+const plusBtn = document.getElementById('plus-btn')
+plusBtn.addEventListener('click', function(){
+    let productQuantity = getInnerInt('product-quantity')
+    productQuantity += 1;
+    setElementValuebyId('product-quantity', productQuantity)
+})
+
+minusBtn = document.getElementById('minus-btn')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------utility----------------
+
+function getInnerInt(id) {
     const element = document.getElementById(id).innerText;
     const int = parseFloat(element)
     return int;
+}
+
+function setElementValuebyId(elementId, value) {
+    const element = document.getElementById(elementId)
+    element.innerText = value;
 }
