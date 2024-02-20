@@ -1,9 +1,13 @@
 
+// Add to cart button:
+document.getElementById('add-cart-button').addEventListener('click', function (event) {
+    console.log(event)
+})
 
 
 
 // cartDetails------------------
-function cartDetails() {
+function cartDetailsContainer() {
     const cartDetails = document.getElementById('cart-details')
     if (cartDetails.style.display === 'block') {
         cartDetails.style.display = 'none'  // dekha jabe na 
@@ -13,23 +17,23 @@ function cartDetails() {
 }
 
 
-
-
 // --------------------
 // control + - button
-const productQuantity = getInnerInt('product-quantity')
-
-
-
 const plusBtn = document.getElementById('plus-btn')
-plusBtn.addEventListener('click', function(){
+plusBtn.addEventListener('click', function () {
     let productQuantity = getInnerInt('product-quantity')
     productQuantity += 1;
     setElementValuebyId('product-quantity', productQuantity)
 })
 
 minusBtn = document.getElementById('minus-btn')
-
+minusBtn.addEventListener('click', function () {
+    let productQuantity = getInnerInt('product-quantity')
+    if (productQuantity > 1) {
+        productQuantity -= 1;
+        setElementValuebyId('product-quantity', productQuantity)
+    }
+})
 
 
 

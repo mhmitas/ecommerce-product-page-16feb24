@@ -38,7 +38,7 @@
         </div>
         <!-- cart-- -->
         <div class="w-20 h-10 flex justify-center items-center rounded-xl hover:bg-orange-100 cursor-pointer mr-4"
-          onclick="cartDetails()">
+          onclick="cartDetailsContainer()">
           <div id="cart" class="relative">
             <span id="productCount" class="">0</span>
             <!-- cart-img -->
@@ -100,12 +100,11 @@
             <div class="flex justify-evenly bg-base-200 rounded-xl items-center w-4/12">
               <!-- plus minus button -->
               <span id="minus-btn" class="btn"><img class="w-3 h-1" src="images/icon-minus.svg" alt=""></span>
-              <!-- productCount -->
-              <span id="product-quantity" class="font-bold">0</span>
+              <!-- productQuantity -->
+              <span id="product-quantity" class="font-bold">1</span>
               <span id="plus-btn" class="btn"><img class="w-4 h-4" src="images/icon-plus.svg" alt=""></span>
             </div>
-            <button id="add-cart-button" onclick="cartProductCount()"
-              class="flex btn w-7/12 bg-orange-600 text-white btn-error"><img class="w-5"
+            <button id="add-cart-button"class="flex btn w-7/12 bg-orange-600 text-white btn-error"><img class="w-5"
                 src="images/cart-shopping-solid (1).svg" alt="">Add to cart</button>
           </div>
         </div>
