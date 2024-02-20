@@ -1,14 +1,24 @@
 
 // Add to cart button:
 document.getElementById('add-cart-button').addEventListener('click', function (event) {
-    const demo = event.target.parentNode.parentNode.childNodes[13].childNodes[1].childNodes[7].innerText
-    console.log(demo)
+    // const demo = event.target.parentNode.parentNode.childNodes[13].childNodes[1].childNodes[7].innerText
     const productName = event.target.parentNode.parentNode.childNodes[3]
     const productPrice = event.target.parentNode.parentNode.childNodes[9].childNodes[1].childNodes[1].childNodes[1].innerText
     const productQuantity = event.target.parentNode.parentNode.childNodes[13].childNodes[1].childNodes[7].innerText;
-    console.log(typeof productQuantity)
+
+    const totalPrice = parseFloat(productPrice) * parseFloat(productQuantity);
+    const container = document.getElementById('container')
+    const div = document.createElement('div')
+    const p = document.createElement('p')
+    p.innerText = `$${productPrice} x ${productQuantity} = ${totalPrice}`
+    container.appendChild(div)
+    div.appendChild(p)
 })
 
+
+// function createElementAndAppend() {
+
+// }
 
 
 
