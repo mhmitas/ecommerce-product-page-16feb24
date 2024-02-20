@@ -27,7 +27,7 @@ body {
     width: 24px;
 }
 
-#product-quantity {
+#productCount {
     background-color: hsl(26, 100%, 55%);
     font-weight: 800;
     font-size: 12px;
