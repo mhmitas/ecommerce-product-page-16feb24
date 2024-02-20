@@ -1,8 +1,15 @@
 
 // Add to cart button:
 document.getElementById('add-cart-button').addEventListener('click', function (event) {
-    console.log(event)
+    const demo = event.target.parentNode.parentNode.childNodes[13].childNodes[1].childNodes[7].innerText
+    console.log(demo)
+    const productName = event.target.parentNode.parentNode.childNodes[3]
+    const productPrice = event.target.parentNode.parentNode.childNodes[9].childNodes[1].childNodes[1].childNodes[1].innerText
+    const productQuantity = event.target.parentNode.parentNode.childNodes[13].childNodes[1].childNodes[7].innerText;
+    console.log(typeof productQuantity)
 })
+
+
 
 
 

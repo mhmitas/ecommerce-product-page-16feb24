@@ -40,7 +40,8 @@ body {
 }
 
 #cart-details{
-    background-color: rgba(255, 166, 0, 0.434);
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
     width: 300px;
-    min-height: 200px;
+    min-height: 100px;
 }
